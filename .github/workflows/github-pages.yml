@@ -42,8 +42,8 @@ jobs:
       - name: Build site with Zola
         run: zola build
 
-      # - name: Post-process and pack public folder
-      #   run: ./scripts/ci_pack_public.sh
+      - name: Post-process and pack public folder
+        run: bash scripts/ci_pack_public.sh
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
