@@ -21,7 +21,7 @@ zola serve
 
 # Contributing
 
-Contributions are welcome and you can PR bug fixes directly. If you somehow ended up here but prefer not to use Github write to [webmaster@cheats.rs](mailto:webmaster@cheats.rs), or use the on-site buttons.
+Contributions are welcome; please open a pull request or issue on GitHub.
 
 Constructive feedback would be most actionable, but if you just want to vent your frustration that's fine too :)
 
@@ -31,11 +31,6 @@ Constructive feedback would be most actionable, but if you just want to vent you
 This site reuses the layout and styling of [cheats.rs](https://cheats.rs) by Ralf Biedert, adapted for the Rhai language.
 
 
-# FAQ
+# Feedback & Issues
 
-Answers to frequently asked questions can [be found here](content/faq.md).
-
-
-# Legal & License
-
-Please [see here](content/legal.md) for details.
+If you spot an error or want to suggest an improvement, please open an issue or pull request on the GitHub repository.

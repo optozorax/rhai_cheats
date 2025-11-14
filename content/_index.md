@@ -5,9 +5,9 @@ template = "index.html"
 insert_anchor_links = "right"
 +++
 
-<a href="javascript:request_admin()" style="cursor:default;"><img id="logo" class="hide_on_small" src="logo.png" alt="Rhai logo on a cheat sheet." height="67"></img></a>
+<img id="logo" class="hide_on_small" src="logo.png" alt="Rhai logo on a cheat sheet." height="67"></img>
 <pagetitle>Rhai Language Cheat Sheet</pagetitle>
-<subtitle><span id="subtitle" onclick="advance_subtitle()">{{ date() }}</span></subtitle>
+<subtitle><span id="subtitle">{{ date() }}</span></subtitle>
 
 
 <blockquote class="legend">
@@ -54,7 +54,6 @@ All snippets are valid Rhai code; most examples assume default engine settings.
 <page-controls>
     <a id="toggle_ligatures" href="javascript:toggle_ligatures()">Font Ligatures (<code>..=, =></code>)</a>
     <a href="javascript:toggle_night_mode()">Night Mode &#x1f4a1;</a>
-    <a class="admin" href="javascript:toggle_xray()">X-Ray 📈</a>
 </page-controls>
 </noprint>
 
@@ -830,4 +829,3 @@ The `in` operator on arrays is based on `contains` and the `==` operator for the
 | Dynamic/shared| `is_shared(value)`                                   | Test whether a value is shared (e.g. captured by a closure).     |
 
 ---
-
