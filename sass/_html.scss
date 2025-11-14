@@ -57,13 +57,15 @@ footer {
     text-align: center;
     color: gray;
     font-size: 9px;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 
 footer::after {
-    content: " ";
+    content: "";
     display: block;
-    width: 1px;
-    height: 20px;
+    height: 10px;
 }
 
 strike {

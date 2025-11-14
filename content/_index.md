@@ -827,5 +827,3 @@ The `in` operator on arrays is based on `contains` and the `==` operator for the
 | Stringify     | `to_string(value)`, `to_debug(value)`                | Convert value to display/debug strings.                          |
 | Evaluation    | `eval(script)`                                       | Evaluate Rhai source inside current scope (use with care).       |
 | Dynamic/shared| `is_shared(value)`                                   | Test whether a value is shared (e.g. captured by a closure).     |
-
----
