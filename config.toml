@@ -1,4 +1,4 @@
-# The URL the site will be built for
-base_url = "https://cheats.rs"
-title = "Rust Language Cheat Sheet"
+# The URL the site will be built for (adjust for your deployment)
+base_url = "https://optozorax.github.io/rhai_cheats"
+title = "Rhai Language Cheat Sheet"
 compile_sass = true
