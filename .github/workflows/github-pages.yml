@@ -23,27 +23,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.20.0
+
       - name: Install npm dependencies
         run: npm install
-        working-directory: cheats.rs
 
       - name: Build site with Zola
-        run: ../zola build
-        working-directory: cheats.rs
+        run: zola build
 
       - name: Post-process and pack public folder
         run: ./scripts/ci_pack_public.sh
-        working-directory: cheats.rs
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: cheats.rs/public.clean
+          path: public.clean
 
   deploy:
     runs-on: ubuntu-latest
@@ -56,4 +61,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
